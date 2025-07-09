@@ -11,7 +11,7 @@ from utils.filters import (
     filter_by_type
 )
 from data_loader import load_data  # cuando lo tengamos listo
-from utils import add_coordinates  # cuando lo tengamos listo
+from utils.utils import add_coordinates  # cuando lo tengamos listo
 
 # ---------------------
 # Carga inicial de datos

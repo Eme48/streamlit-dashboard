@@ -40,3 +40,15 @@ dashboard.show_time_series(filtered_data)
 # ======================================
 
 dashboard.export_filtered_data(filtered_data)
+
+# ======================================
+# Checkboxes 
+# ======================================
+
+if st.checkbox("Mostrar histograma básico (odometer)"):
+    fig = px.histogram(car_data, x="odometer")
+    st.plotly_chart(fig, use_container_width=True)
+
+if st.checkbox("Mostrar dispersión precio vs odómetro"):
+    fig2 = px.scatter(car_data, x="odometer", y="price", color="type")
+    st.plotly_chart(fig2, use_container_width=True)

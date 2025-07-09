@@ -1,5 +1,5 @@
 import streamlit as st
-from dashboard import VehiclesDashboard
+from dashboard import main
 from data_loader import load_data
 
 # =======================================
@@ -19,7 +19,7 @@ car_data = load_data("vehicles_us.csv")
 # Inicializar el dashboard
 # ==========================
 
-dashboard = VehiclesDashboard(car_data)
+dashboard = main(car_data)
 
 # ======================================
 # Filtros interactivos y datos filtrados

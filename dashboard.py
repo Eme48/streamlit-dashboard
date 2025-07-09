@@ -3,9 +3,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from filters import (
-    filter_by_year, filter_by_price, filter_by_state,
-    filter_by_transmission, filter_by_type
+from utils.filters import (
+    filter_by_year,
+    filter_by_price,
+    filter_by_state,
+    filter_by_transmission,
+    filter_by_type
 )
 from data_loader import load_data  # cuando lo tengamos listo
 from utils import add_coordinates  # cuando lo tengamos listo

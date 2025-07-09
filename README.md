@@ -11,19 +11,19 @@ Este proyecto presenta una **aplicación web interactiva** construida con **Stre
 
 ## 📁 Estructura del proyecto
 
-streamlit-dashboard/
-    ```├── app.py
-    ├── data_loader.py
-    ├── dashboard.py
-    ├── vehicles_us.csv
-    ├── requirements.txt
-    ├── README.md
-    ├── notebooks/
-    │ └── EDA.ipynb
-    ├── utils/
-    │ ├── filters.py
-    │ ├── state_coords.py
-    │ └── utils.py
+    streamlit-dashboard/
+        ├── app.py
+        ├── data_loader.py
+        ├── dashboard.py
+        ├── vehicles_us.csv
+        ├── requirements.txt
+        ├── README.md
+        ├── notebooks/
+        │ └── EDA.ipynb
+        ├── utils/
+        │ ├── filters.py
+        │ ├── state_coords.py
+        │ └── utils.py
 
 
 ## ⚙️ Tecnologías utilizadas

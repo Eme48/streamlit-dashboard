@@ -42,12 +42,14 @@ Este proyecto presenta una **aplicación web interactiva** construida con **Stre
    cd streamlit-dashboard
 
 2. Crea un entorno virtual e instálalo:
-    ```python -m venv venv
+    ```bash
+    python -m venv venv
     venv\Scripts\activate
     pip install -r requirements.txt
 
 3. Ejecuta la aplicación:
-    ``streamlit run app.py
+    ```bash
+    streamlit run app.py
 
 ## 🌐 Versión en línea
 Puedes acceder a la versión desplegada en Render en el siguiente enlace:

@@ -12,7 +12,7 @@ Este proyecto presenta una **aplicación web interactiva** construida con **Stre
 ## 📁 Estructura del proyecto
 
 streamlit-dashboard/
-├── app.py
+```├── app.py
 ├── data_loader.py
 ├── dashboard.py
 ├── vehicles_us.csv
@@ -42,12 +42,12 @@ streamlit-dashboard/
    cd streamlit-dashboard
 
 2. Crea un entorno virtual e instálalo:
-    python -m venv venv
+    ```python -m venv venv
     venv\Scripts\activate
     pip install -r requirements.txt
 
 3. Ejecuta la aplicación:
-    streamlit run app.py
+    ```streamlit run app.py
 
 ## 🌐 Versión en línea
 Puedes acceder a la versión desplegada en Render en el siguiente enlace:

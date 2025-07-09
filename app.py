@@ -1,6 +1,7 @@
 import streamlit as st
 from dashboard import VehiclesDashboard
 from data_loader import load_data
+import plotly.express as px
 
 # =======================================
 # Configuración general de la aplicación
@@ -45,7 +46,9 @@ dashboard.export_filtered_data(filtered_data)
 # Checkboxes 
 # ======================================
 
-if st.checkbox("Mostrar histograma básico (odometer)"):
+st.header("Visualizaciones adicionales")
+
+if st.checkbox("Mostrar histograma básico (odómetro)"):
     fig = px.histogram(car_data, x="odometer")
     st.plotly_chart(fig, use_container_width=True)
 

@@ -40,21 +40,6 @@ def filter_by_price(df: pd.DataFrame, price_range: tuple) -> pd.DataFrame:
         raise ValueError("La columna 'price' no existe en el DataFrame.")
     return df[(df['price'] >= price_range[0]) & (df['price'] <= price_range[1])]
 
-def filter_by_state(df: pd.DataFrame, states: list) -> pd.DataFrame:
-    """
-    Filtra el DataFrame por una lista de estados.
-
-    Parámetros:
-        df (pd.DataFrame): DataFrame original con la columna 'state'.
-        states (list): Lista de estados a incluir.
-
-    Retorna:
-        pd.DataFrame: DataFrame filtrado por estado.
-    """
-    if 'state' not in df.columns:
-        raise ValueError("La columna 'state' no existe en el DataFrame.")
-    return df[df['state'].isin(states)]
-
 def filter_by_transmission(df: pd.DataFrame, transmissions: list) -> pd.DataFrame:
     """
     Filtra el DataFrame por tipos de transmisión.

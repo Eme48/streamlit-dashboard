@@ -5,8 +5,6 @@ Funciones utilitarias para el procesamiento y análisis de datos de vehículos u
 """
 
 import pandas as pd
-from utils.state_coords import STATE_COORDS
-
 
 def preprocess_data(df: pd.DataFrame) -> pd.DataFrame:
     """

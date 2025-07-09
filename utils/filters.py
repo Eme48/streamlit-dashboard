@@ -74,7 +74,6 @@ def apply_filters(
     df: pd.DataFrame,
     year_range: tuple = None,
     price_range: tuple = None,
-    states: list = None,
     transmissions: list = None,
     types: list = None
 ) -> pd.DataFrame:
@@ -96,8 +95,6 @@ def apply_filters(
         df = filter_by_year(df, year_range)
     if price_range:
         df = filter_by_price(df, price_range)
-    if states:
-        df = filter_by_state(df, states)
     if transmissions:
         df = filter_by_transmission(df, transmissions)
     if types:

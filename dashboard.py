@@ -9,7 +9,7 @@ from utils.filters import (
     filter_by_transmission,
     filter_by_type
 )
-from utils.utils import add_coordinates, preprocess_data
+from utils.utils import preprocess_data
 
 
 class VehiclesDashboard:
@@ -21,7 +21,6 @@ class VehiclesDashboard:
             df (pd.DataFrame): Dataset original.
         """
         self.df = preprocess_data(df)
-        self.df = add_coordinates(self.df)
         self.filters = None
 
     def apply_filters(self):

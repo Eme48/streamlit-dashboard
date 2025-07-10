@@ -22,7 +22,6 @@ Este proyecto presenta una **aplicación web interactiva** construida con **Stre
         │ └── EDA.ipynb
         ├── utils/
         │ ├── filters.py
-        │ ├── state_coords.py
         │ └── utils.py
 
 

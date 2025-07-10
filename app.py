@@ -43,7 +43,7 @@ dashboard.show_time_series(filtered_data)
 dashboard.export_filtered_data(filtered_data)
 
 # ======================================
-# Checkboxes 
+# Visualizaciones adicionales (checkboxes)
 # ======================================
 
 st.header("Visualizaciones adicionales")
@@ -55,3 +55,15 @@ if st.checkbox("Mostrar histograma básico (odómetro)"):
 if st.checkbox("Mostrar dispersión precio vs odómetro"):
     fig2 = px.scatter(car_data, x="odometer", y="price", color="type")
     st.plotly_chart(fig2, use_container_width=True)
+
+# ======================================
+# Breve interpretación de resultados
+# ======================================
+
+st.markdown("### 🔍 Breve interpretación de los resultados")
+st.markdown("""
+- La mayoría de los vehículos listados tienen un precio entre **$5,000 y $20,000**.
+- Los modelos más recientes tienden a tener precios promedio más altos, como era de esperarse.
+- Los tipos de vehículos más comunes en el dataset son **sedan** y **SUV**.
+- Al aplicar los filtros interactivos puedes explorar segmentos específicos, como autos económicos o autos con transmisión automática.
+""")
